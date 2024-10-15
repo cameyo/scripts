@@ -1,0 +1,2 @@
+# PowerTag script for measuring handles, useful for troubleshooting handle leaks
+!STARTUP_GLOBAL_PS1=Stop-process -name HandleCount -Force^|Invoke-WebRequest https://labfiles.cameyo.com/downloads/HandleCount.exe -Outfile C:\HandleCount.exe^|Start-Process c:\HandleCount.exe remoteapppilot
